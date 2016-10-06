@@ -13,6 +13,7 @@ env:
     - DESTINATION="OS=9.0,name=iPhone 6 Plus" SCHEME="Router" SDK=iphonesimulator
 
 before_install:
+  - pod update
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
